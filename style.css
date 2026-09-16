@@ -37,7 +37,7 @@ h2 {
 a {
   /* background-color: whitesmoke; */
   color: #242424;
-  text-decoration: none;
+  font-size: 20px;
   padding: 0 16px;
   display: inline;
   /* border: 1px solid blue; */
@@ -67,14 +67,19 @@ a {
   position: absolute;
   left: 0;
   bottom: -3px;
-  width: 0;
+  width: 100%;
   height: 3px;
   background-color: black;
+  border-radius: 10px;
+  transform-origin: left;
+  transform:scaleX(0);
   transition: all 300ms ease;
 }
 
 .nav__links:hover::after {
-  width: 100%
+  width: 100%;
+  transform-origin: right;
+  transform: scaleX(1); 
 }
 
 button{
@@ -107,4 +112,17 @@ header {
 /* Movies Section */
 .section__title {
   text-align: center;
+}
+
+.wrapper {
+  width: 800px;
+  height: 800px;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
 }
