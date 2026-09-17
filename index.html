@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="app.js"></script>
   <script src="https://kit.fontawesome.com/26958f40da.js" crossorigin="anonymous"></script>
   <title>Movies & Stuff</title>
 </head>
@@ -33,6 +32,16 @@
         <h3>Thrilling Films and Spectacular Cinema</h3>
       </div>
       </header>
+        <div class="movies-controls">
+          <div class="select-specific">
+            <input id="select-input" type="text" placeholder="Search title or IMDB id (e.g. The Fast and the Furious)"/>
+            <button id="select-btn">Go</button>
+          </div>
+          <div class="nav-controls">
+            <button id="prev-btn" aria-label="Previous">Prev</button>
+          <button id="next-btn" aria-label="Next">Next</button>
+          </div>
+        </div>
       <div id="movies-list" class="api-wrapper"></div>
       </div>
     </div>
@@ -51,5 +60,6 @@
     <h3>Gaming</h3>
   </section> -->
 </main>
+<script src="app.js"></script>
 </body>
 </html>
