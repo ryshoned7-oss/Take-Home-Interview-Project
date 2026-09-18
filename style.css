@@ -46,6 +46,7 @@ a {
 .container {
   height: 100%;
   padding: 50px 0;
+  
 }
 
 .row {
@@ -136,16 +137,19 @@ header {
   justify-content: center;
   align-items: center;
   transform: translate(-50%, -50%);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .movies-controls {
+  position: relative;
+  top: 0;
+  left: 0;
   width: 100%;
   max-width: 1100px;
   margin: 12px auto;
   padding: 0 12px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 12px;
   align-items: center;
 }
