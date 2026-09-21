@@ -5,7 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  color: #242424;
+  
 }
 
 html {
@@ -13,22 +13,21 @@ html {
 }
 
 body {
-  height: 100%;
-  max-width: 100vw;
-  overflow-x: hidden;
+  color: black;
+  min-height: 100vh;
   background-image: url('./view-3d-cinema-theatre-room.avif');
+  background-image: 100%;
+  background-position: top center;
+  background-repeat:no-repeat ;
   background-size: cover;
+  z-index: 10;
 }
 
 h1, 
 h2,
 a,
 button {
-color: orange;
-}
-
-.fas.fa-film {
-  color: orange;
+color: black;
 }
 
 nav {
@@ -66,6 +65,14 @@ a {
 }
 
 /* Navigation */
+.logo{
+  user-select: none;
+}
+
+.icon{
+  color: orange;
+}
+
 .nav__links {
   position: relative;
   text-decoration: none;
@@ -132,7 +139,7 @@ header {
 
 .wrapper {
   width: 800px;
-  height: 800px;
+  height: 750px;
   flex-direction: column;
   position: absolute;
   top: 50%;
@@ -146,6 +153,22 @@ header {
   align-items: space-evenly;
   transform: translate(-50%, -50%);
   overflow: hidden;
+  z-index: 1;
+}
+
+.wrapper .icon-close{
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 0%;
+  right: 0%;
+  background-color: #242424;
+  color: #fff;
+  font-size: 1.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .movies-controls {
