@@ -16,9 +16,19 @@ body {
   height: 100%;
   max-width: 100vw;
   overflow-x: hidden;
-  background-image: url('./glowing-spooky-pumpkins-halloween.jpg');
+  background-image: url('./view-3d-cinema-theatre-room.avif');
   background-size: cover;
-  
+}
+
+h1, 
+h2,
+a,
+button {
+color: orange;
+}
+
+.fas.fa-film {
+  color: orange;
 }
 
 nav {
@@ -37,12 +47,9 @@ h2 {
 }
 
 a {
-  /* background-color: whitesmoke; */
-  color: #242424;
   font-size: 20px;
   padding: 0 16px;
   display: inline;
-  /* border: 1px solid blue; */
 }
 
 .container {
@@ -62,7 +69,6 @@ a {
 .nav__links {
   position: relative;
   text-decoration: none;
-  color: black;
 }
 
 .nav__links::after {
@@ -72,7 +78,7 @@ a {
   bottom: -3px;
   width: 100%;
   height: 3px;
-  background-color: black;
+  background-color: orange;
   border-radius: 10px;
   transform:scaleX(0);
   transition:all 300ms ease;
