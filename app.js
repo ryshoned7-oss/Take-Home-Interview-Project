@@ -90,3 +90,15 @@ nextBtn.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', () => {
   searchAndRender(currentQuery, currentPage)
 })
+
+const wrapper = document.querySelector('.wrapper');
+const btnFind = document.querySelector('.btn__find')
+const iconClose = document.querySelector('.icon-close')
+
+btnFind.addEventListener('click', () => {
+  wrapper.classList.add('active')
+})
+
+iconClose.addEventListener('click', () => {
+  wrapper.classList.remove('active')
+})

@@ -106,7 +106,7 @@ button{
   background-color: transparent;
 }
 
-.btn__login {
+.btn__find {
   font-size: 20px;
   font-weight: bold;
   padding: 8px;
@@ -137,7 +137,11 @@ header {
   text-align: center;
 }
 
-.wrapper {
+.wrapper{
+  display: none;
+}
+
+.wrapper.active{
   width: 800px;
   height: 750px;
   flex-direction: column;
@@ -170,6 +174,7 @@ header {
   align-items: center;
   cursor: pointer;
 }
+
 
 .movies-controls {
   position: relative;
