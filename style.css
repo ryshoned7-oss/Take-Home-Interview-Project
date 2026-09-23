@@ -146,7 +146,7 @@ header {
   height: 750px;
   flex-direction: column;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   display: flex;
   background-color: rgba(255, 255, 255, 0.15);
@@ -227,8 +227,23 @@ header {
   align-items: start;
   justify-items: center;
   padding-bottom: 12px;
-  overflow: auto;
+  overflow: scroll;
 }
+
+/* WebKit-based browsers (Chrome, Edge, Safari) */
+#movies-list::-webkit-scrollbar {
+   width: 50px; }
+#movies-list::-webkit-scrollbar-track { 
+  background: rgba(0,0,0,0.04); border-radius: 6px; }
+#movies-list::-webkit-scrollbar-thumb { 
+  background: rgba(0,0,0,0.2); border-radius: 6px; }
+#movies-list::-webkit-scrollbar-thumb:hover { 
+  background: rgba(0,0,0,0.3); }
+
+/* Firefox: use scrollbar-width & scrollbar-color */
+#movies-list { 
+  scrollbar-width: thin; scrollbar-color: rgba(0,0,0,0.2) rgba(0,0,0,0.04); }
+
 .poster-card {
   width: 100%;
   max-width: 160px;
@@ -259,4 +274,34 @@ header {
   .movies-controls { flex-direction: column; align-items: stretch; }
   .select-specific input { min-width: 100%; }
   #movies-list { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+}
+
+/* Mobile Responsiveness */
+
+@media (max-width: 1280px) {
+  #Navigation{
+    align-items: flex-end;
+  }
+  .nav__container{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    line-height: 1.5;
+    padding-right: 48px;
+  }
+}
+@media(max-width: 624px) {
+  .wrapper{
+    
+    max-width: calc(100vw - 10%);
+    max-height: calc(100vh - 40%);
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper .close{
+    padding: 24px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
