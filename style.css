@@ -158,7 +158,6 @@ header {
   align-items: space-evenly;
   transform: translate(-50%, -50%);
   overflow: scroll;
-  overflow-x: hidden;
   z-index: 1;
 }
 
@@ -219,6 +218,23 @@ header {
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
+label, #sort-select{
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  
+}
+.sort-movies{
+  font-weight: bold;
+}
+
+#sort-select{
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+
 
 #movies-list {
   width: calc(100% - 48px);
@@ -280,17 +296,17 @@ header {
   }
 }
 @media(max-width: 624px) {
-  .wrapper{
-    
+  .wrapper.active{
     max-width: calc(100vw - 10%);
     max-height: calc(100vh - 40%);
     display: flex;
     justify-content: center;
   }
-  .wrapper .close{
+  .wrapper.icon-close{
     padding: 24px;
     justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: column;
   }
+
 }

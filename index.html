@@ -37,6 +37,12 @@
           <div class="select-specific">
             <input id="select-input" type="text" placeholder="Search title or IMDB id (e.g. The Fast and the Furious)"/>
             <button id="select-btn">Go</button>
+            <label for="sort-select" class="sort-movies">Sort Movies</label>
+              <select id="sort-select" aria-label="Sort movies">
+                <option value="default" class="sort-opt">Sort: Default</option>
+                <option value="year-asc" class="sort-opt">Year: Old to New</option>
+                <option value="year-desc" class="sort-opt">Year: New to Old</option>
+              </select>
           </div>
           <div class="nav-controls">
             <button id="prev-btn" aria-label="Previous">Prev</button>
