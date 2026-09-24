@@ -102,3 +102,11 @@ btnFind.addEventListener('click', () => {
 iconClose.addEventListener('click', () => {
   wrapper.classList.remove('active')
 })
+
+const list = document.getElementById('movies-list');
+list.addEventListener('wheel', (e) => {
+  if(Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+    //list.scrollLeft += e.deltaY;
+    e.preventDefault();
+  }
+})
